@@ -1,0 +1,218 @@
+/* Starting with a CSS reset */
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* Defining font styles for the whole body */
+
+body {
+	font-family: "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #ffffff;
+	color: #000020;
+	font-size: 16px;
+	line-height: 1.1;
+}
+
+h1, h2, h3, h4, p, li, dt {
+	margin: .3em 0;
+}
+
+strong {
+	font-weight: 800;
+}
+
+em {
+	font-style: italic;
+}
+.main-container {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 20px;
+}
+
+main, aside {
+	display: flex;
+	flex-flow: column;
+}
+
+section {
+	padding: .5em;
+}
+
+section:nth-of-type(even) {
+	background: rgba(120,120,120,.1);
+}
+
+section:last-of-type {
+	flex-grow: 1;
+}
+
+/* Styles for the header (photo, tagline, etc.) */
+
+header {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	background: #301010;
+	color: #f0f0f0;
+}
+
+.portrait-container {
+	margin: 10px;
+	border-radius: 100px;
+	background: rgba(120,120,120,.4);
+}
+
+.portrait {
+	max-width: 100%;
+	border-radius: 100px;
+}
+
+.header-content {
+	text-align: center;
+	flex-grow: 1;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: 900;
+	line-height: 1em;
+}
+
+.tagline {
+	font-size: 1.5em;
+	font-weight: 200;
+	font-style: italic;
+	margin: .6em 0;
+}
+
+/* Styles for the main column */
+
+main {
+	flex: 1 1 60%;
+	background: #f0f0f0;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.biography-item {
+   	display: flex;
+   	margin: .6em 0;
+}
+
+.logo-container {
+	flex: 0 1 20%;
+}
+
+.biography-logo {
+	display: block;
+	margin: .6em auto .3em;
+	max-width: 100%;
+	max-height: 55px;
+}
+
+.biography-contents {
+	flex: 1 0 80%;
+	padding-left: 5px;
+}
+
+.biography-title {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.biography-dates {
+	font-size: 1.25em;
+	font-weight: 300;
+	margin-bottom: .5em;
+}
+
+.biography-details, .skill-list {
+	list-style-position: inside;
+	list-style-image: url('../images/chevron.svg');
+}
+
+/* Styles for the secondary column */
+
+aside {
+	flex: 1 1 300px;
+	background: #282840;
+	color: #f0f0f0;
+	display: flex;
+	flex-flow: column;
+}
+
+aside a {
+	color: #c0c0ff;
+}
+
+aside a:hover {
+	opacity: .8;
+}
+
+.language-list {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.language-name {
+	width: 50%;
+}
+
+.language-level {
+	font-size: .8em;
+	font-weight: 600;
+	width: 50%;
+	line-height: 1.5;
+	margin: .3em 0;
+	text-align: center;
+	border: 2px solid #fffff0;
+	color: #000000;
+	text-shadow: 1px 1px 2px #ffffff;
+	background-color: #802020;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2"><rect fill="rgb(255,200,100)" x="0" y="0" width="1" height="2" /></svg>');
+    background-repeat: no-repeat;
+	background-position: left;
+}
+
+.level-25 {
+	background-size: 25%;
+}
+
+.level-50 {
+	background-size: 50%;
+}
+
+.level-75 {
+	background-size: 75%;
+}
+
+.level-100 {
+	background-size: 100%;
+}
+
+.contact-item a {
+	display: flex;
+	align-items: center;
+}
+
+.contact-icon {
+	height: 1em;
+	flex-basis: 1.4em;
+	filter: invert();
+}
