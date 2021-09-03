@@ -2,15 +2,31 @@
 
 body {
 	font-family: "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #202030;
+	background-color: #f8f8fc;
+}
+
+.resume-container {
+	background-color: #fffffc;
 }
 
 
-/* Styles for the main column */
+/* Special styles */
 
-.biography-details, .skill-list {
-	list-style-position: inside;
-	list-style-image: url('../images/chevron.svg');
-	padding: 0;
+.biography-details li::before, .skill-list li::before {
+	content: ">";
+	font-weight: 800;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.biography-details li::before {
+	color: #EE7623;
+}
+
+.biography-details li, .skill-list li {
+	padding-left: 1em;
 }
 
 .contact-icon {
