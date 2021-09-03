@@ -59,6 +59,8 @@ section {
 
 header {
 	width: 16%;
+	max-width: 260px;
+	min-width: 80px;
 	display: flex;
 	flex-flow: column;
 	background: #301010;
@@ -67,18 +69,17 @@ header {
 
 .portrait-container {
 	margin: 10px;
-	border-radius: 100px;
+	border-radius: 130px;
 	background: rgba(120,120,120,.4);
 }
 
 .portrait-container img {
-	border-radius: 100px;
+	border-radius: 130px;
 	width:  100%;
 }
 
 .header-content {
 	text-align: center;
-	flex-grow: 1;
 	display:  flex;
 	flex-flow: row;
 	justify-content: center;
