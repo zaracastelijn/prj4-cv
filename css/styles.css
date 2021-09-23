@@ -1,17 +1,31 @@
-/* Write here styles that will apply to the main body */
+/* Use this file to use your own styles*/
+
+/* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Styles for the body */
 
 body {
-	font-family: "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #202030;
 	background-color: #f8f8fc;
 }
 
-.resume-container {
-	background-color: #fffffc;
+/* Styles for custom classes in the document. (There are more, try to find them out!) */
+
+.resume-header {
+    background-color: #e0f0ff;
 }
 
+.resume-main {
+	background-color: #fffefc;
+}
 
-/* Special styles */
+.resume-aside {
+	background-color: #fff0e0;
+}
+
+/* Styles for lists in the document */
 
 .biography-details li::before, .skill-list li::before {
 	content: ">";
@@ -28,6 +42,8 @@ body {
 .biography-details li, .skill-list li {
 	padding-left: 1em;
 }
+
+/* Styles for contact icons */
 
 .contact-icon {
 	height: 1em;
