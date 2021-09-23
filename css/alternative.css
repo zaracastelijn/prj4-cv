@@ -21,7 +21,7 @@ body {
 	font-family: "Erode", serif;
 	background: #ffffff;
 	color: #000020;
-	font-size: 18px;
+	font-size: clamp(16px, 1.5vw, 20px);
 	line-height: 1.1;
 }
 
@@ -33,17 +33,20 @@ h1, h2, h3, h4, p, li, dt {
 	display: flex;
 	flex-flow: row;
 	margin: 0 auto;
+	height: 100vh;
 }
 
 .resume-bottom {
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
+	overflow-y: auto;
 }
 
 main, aside {
 	display: flex;
 	flex-flow: column;
+	min-height: 100%;
 }
 
 section {
@@ -51,7 +54,7 @@ section {
 }
 
 section {
-	background-image: linear-gradient(to bottom, rgba(120, 120, 120, .2), transparent);
+	background-image: linear-gradient(to bottom, rgba(120, 120, 120, .1), transparent);
 	flex-grow: 1;
 }
 
@@ -63,19 +66,23 @@ header {
 	min-width: 80px;
 	display: flex;
 	flex-flow: column;
-	background: #301010;
+	background-color: #301010;
 	color: #f0f0f0;
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), transparent);
 }
 
 .portrait-container {
 	margin: 10px;
 	border-radius: 130px;
 	background: rgba(120,120,120,.4);
+	max-height: 30%;
 }
 
 .portrait-container img {
 	border-radius: 130px;
-	width:  100%;
+	width: 100%;
+	max-height: 100%;
 }
 
 .header-content {
@@ -83,10 +90,11 @@ header {
 	display:  flex;
 	flex-flow: row;
 	justify-content: center;
+	overflow: hidden;
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: clamp(28px, 3vh, 40px);
 	font-weight: 900;
 	font-family:  Telma;
 	writing-mode: vertical-lr;
@@ -94,7 +102,7 @@ h1 {
 }
 
 .tagline {
-	font-size: 1.5em;
+	font-size: clamp(22px, 2.5vh, 30px);
 	font-weight: 200;
 	font-style: italic;
 	margin: .6em 0;
@@ -153,7 +161,7 @@ main {
 
 h2 {
 	writing-mode: vertical-lr;
-	font-size: 1.8em;
+	font-size: clamp(20px, 2.5vh, 36px);
 	font-weight: 900;
 	font-family:  Telma;
 }
