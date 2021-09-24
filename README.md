@@ -8,7 +8,8 @@ Click on <https://buas-media-interactive.github.io/prj4-cv/> to see what the ré
 
 ## Create your own CV
 
-Create your own GitHub repository based on this template by clicking on (Use this template)[https://github.com/buas-media-interactive/prj4-cv/generate].
+Create your own GitHub repository based on this template by clicking on
+[Use this template](https://github.com/buas-media-interactive/prj4-cv/generate).
 
 ## Course requirements
 
