@@ -6,6 +6,8 @@ A template to create a CV while learning HTML and CSS
 
 Click on <https://buas-media-interactive.github.io/prj4-cv/> to see what the résumé looks like when published!
 
+ **Please replace the address above by your CV's own address, since this is a link to the original template!**
+
 ## Create your own CV
 
 Create your own GitHub repository based on this template by clicking on
@@ -13,13 +15,7 @@ Create your own GitHub repository based on this template by clicking on
 
 ## Course requirements
 
-In order to pass the individual assessment, you must modify the following elements:
-
-- Modify the **text content**: Change your name, add jobs, schools, skills and hobbies to the CV
-- Modify the **styles**: Make sure that at least one font, one text colour and one background color are changed.
-- Add **images**: Put your portrait and the logos of the employers you've worked with and schools you've studied in
-- Publish it with **GitHub pages**: Add the link to your CV in the _README.md_ file (yes, this one). We'll be checking your work by clicking on that link, and we'll also check that it works on a mobile phone.
-- Check and **fix any errors**: there should be no broken links or images, and there must be no error when checking your CV on <https://validator.w3.org/>
+Please check the latest requirements for the résumé [in the PRJ4 Guide](https://buas-media-interactive.github.io/prj4-guide/checklist-individual.html)
 
 ## Image credits
 
