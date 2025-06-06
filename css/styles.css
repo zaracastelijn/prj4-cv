@@ -1,17 +1,16 @@
-/* Use this file to use your own styles*/
+/* Use this file to use your own styles */
 
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 /* Styles for the body */
-
 body {
 	font-family: "Inconsolata", monospace;
 	color: antiquewhite;
 	background-color: antiquewhite;
 }
-/* Styles for custom classes in the document. (There are more, try to find them out!) */
 
+/* Styles for custom classes in the document */
 .resume-header {
     background-color: #BFA93B;
 }
@@ -23,10 +22,11 @@ body {
 
 .resume-aside {
 	background-color: #A64F03;
+}
 
 /* Styles for lists in the document */
-
-.biography-details li::before, .skill-list li::before {
+.biography-details li::before,
+.skill-list li::before {
 	content: ">";
 	color: antiquewhite; 
 	font-weight: 800;
@@ -39,16 +39,24 @@ body {
 	color: #A64F03;
 }
 
-.biography-details li, .skill-list li {
+.biography-details li,
+.skill-list li {
 	padding-left: 1em;
 }
 
 /* Styles for contact icons */
-
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
-		
 }
-.square {
+
+/* Custom class: Adds a colored border around blocks */
+.bordered-block {
+	border: 3px solid #07DBDC;
+	padding: 20px;
+	margin: 15px 0;
+	border-radius: 8px;
+	background-color: #ffffff; /* Optional: white background */
+	color: #333333; /* Optional: text color */
 }
+
